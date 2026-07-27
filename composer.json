@@ -1,11 +1,11 @@
 {
-    "name": "lthn/php-plug-social",
+    "name": "dappcore/php-plug-social",
     "description": "Social media provider integrations for the Plug framework",
     "type": "library",
     "license": "EUPL-1.2",
     "require": {
         "php": "^8.2",
-        "lthn/php": "*"
+        "dappcore/php": "*"
     },
     "autoload": {
         "psr-4": {
