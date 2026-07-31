@@ -38,7 +38,8 @@ class Auth implements Authenticable, Refreshable
         private readonly string $clientSecret,
         private readonly string $redirectUrl,
         private readonly array $values = []
-    ) {}
+    ) {
+    }
 
     public static function identifier(): string
     {

@@ -55,7 +55,7 @@ class Post implements Postable
 
         if ($media->isNotEmpty()) {
             $uploadedMedia = [];
-            $mediaUploader = (new Media)->withToken($token)->forAuthor($authorUrn);
+            $mediaUploader = (new Media())->withToken($token)->forAuthor($authorUrn);
 
             foreach ($media as $item) {
                 $result = $mediaUploader->upload($item);

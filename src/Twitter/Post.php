@@ -28,7 +28,7 @@ class Post implements Postable
 
         // Handle media attachments
         if ($media->isNotEmpty()) {
-            $mediaUploader = (new Media)->withToken($this->token);
+            $mediaUploader = (new Media())->withToken($this->token);
             $mediaIds = [];
 
             foreach ($media as $item) {

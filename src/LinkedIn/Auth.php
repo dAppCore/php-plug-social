@@ -23,8 +23,6 @@ class Auth implements Authenticable, Refreshable
     use ManagesTokens;
     use UsesHttp;
 
-    private const API_URL = 'https://api.linkedin.com';
-
     private const OAUTH_URL = 'https://www.linkedin.com/oauth';
 
     private string $apiVersion = 'v2';

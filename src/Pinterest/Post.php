@@ -37,7 +37,7 @@ class Post implements Postable
         $image = $media->first();
 
         // Upload media first
-        $mediaUploader = (new Media)->withToken($this->getToken());
+        $mediaUploader = (new Media())->withToken($this->getToken());
         $mediaResult = $mediaUploader->upload($image);
 
         if ($mediaResult->hasError()) {

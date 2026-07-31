@@ -23,8 +23,6 @@ class Post implements Postable
     use ManagesTokens;
     use UsesHttp;
 
-    private const API_URL = 'https://www.googleapis.com/youtube/v3';
-
     private const UPLOAD_URL = 'https://www.googleapis.com/upload/youtube/v3';
 
     public function publish(string $text, Collection $media, array $params = []): Response

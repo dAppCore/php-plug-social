@@ -46,7 +46,7 @@ class Post implements Postable
         // Handle media attachments
         if ($media->isNotEmpty()) {
             $mediaIds = [];
-            $mediaUploader = (new Media)->forPage($pageId, $pageToken);
+            $mediaUploader = (new Media())->forPage($pageId, $pageToken);
 
             foreach ($media as $item) {
                 $result = $mediaUploader->upload($item);

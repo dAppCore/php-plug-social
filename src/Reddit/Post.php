@@ -59,7 +59,7 @@ class Post implements Postable
         // Handle image post
         if ($media->isNotEmpty() && ! isset($params['url'])) {
             $image = $media->first();
-            $mediaUploader = (new Media)->withToken($this->getToken());
+            $mediaUploader = (new Media())->withToken($this->getToken());
             $uploadResult = $mediaUploader->upload($image);
 
             if ($uploadResult->hasError()) {
